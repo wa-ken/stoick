@@ -62,6 +62,12 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def start
+    @start = Question.find(Question.pluck(:id).sample)
+    redirect_to @start
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_question
