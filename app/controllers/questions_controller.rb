@@ -64,7 +64,8 @@ class QuestionsController < ApplicationController
 
   def start
     @start = Question.find(Question.pluck(:id).sample)
-    redirect_to @start
+    @next = Question.find(Question.pluck(:id).sample)
+
   end
 
 
