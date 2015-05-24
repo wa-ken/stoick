@@ -1,19 +1,21 @@
-<h1>sto[i]ck</h1>
-<p id="notice"><%= notice %></p>
-<p>
-  <strong>問題:</strong>
-  <%= @start.make_question %>
-</p>
-<% if params[:answer] %>
-<p>
-	<strong>答え:</strong>
-	<%= @start.data %>
-</p>
-<% else %>
-<p>
-	<%= link_to "答えを見る", request.url + "?answer=true" %>
-</p>
-<% end %>
-<p>
-	<%= link_to "次の問題", @next %>
-</p>
+<div id="container">
+  <h1>sto[i]ck</h1>
+  <p id="notice"><%= notice %></p>
+    <% if params[:answer] %>
+      <p>
+        <strong>答え:</strong>
+        <%= @start.data %>
+      </p>
+    <% else %>
+      <p>
+        <strong>問題:</strong>
+        <%= @start.make_question %>
+      </p>
+      <p>
+        <%= link_to "答えを見る", request.url + "?answer=true" %>
+      </p>
+    <% end %>
+    <p>
+      <%= link_to "次の問題", @next %>
+    </p>
+</div>
