@@ -6,9 +6,20 @@
   <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag %>
 </head>
 <body>
+  <div class="header">
+    <h1 class="logo">sto[i]ck</h1>
+    <ul class="header_b">
+      <li><%= link_to image_tag('new.png',{:border => '0',:alt=>'new'}),new_question_path ,class:"questionslist" %>
+      </li>
+      <li><%= link_to image_tag('new.png',{:border => '0',:alt=>'new'}),new_question_path ,class:"newpost" %>
+      </li>
+    </ul>
+  </div>
 
+  
 <%= yield %>
 
 </body>
