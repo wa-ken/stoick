@@ -10,9 +10,10 @@
 </head>
 <body>
   <div class="header">
-    <h1 class="logo">sto[i]ck</h1>
-    <ul class="header_b">
-      <li><%= link_to image_tag('new.png',{:border => '0',:alt=>'new'}),new_question_path ,class:"questionslist" %>
+    <h1 class="header_logo"><%= link_to image_tag('logo.png',{:border => '0',:alt=>'sto[i]ck'}), '/' %>
+    </h1>
+    <ul>
+      <li><%= link_to image_tag('edit.png',{:border => '0',:alt=>'edit'}),new_question_path ,class:"questionslist" %>
       </li>
       <li><%= link_to image_tag('new.png',{:border => '0',:alt=>'new'}),new_question_path ,class:"newpost" %>
       </li>

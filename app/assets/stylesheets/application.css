@@ -14,32 +14,41 @@
  *= require_self
  */
 .header{
-    border-top: 3px solid #888 ;		/* 枠線 */
-	text-align: center ;	/* テキスト、画像の真ん中寄せ */
-	margin-top: 0 ;	/* 他のブロックとのスペース */
-	height: 150px;
 	background: #414141 ;
-	display: block;
+	height: 55px;
+	text-align: center;
 }
 
-.logo{
-	font-size: 25px;
-	top: 3px;
-    height: 25px;
-    margin: 0 auto;
-    margin-top: 13px;
-    float:center;
-    margin-left: auto;
-    margin-right: auto;
+.header_logo{
+	line-height: 0;
+	margin:0;
 }
 
-.header_b{
-	list-style:none;
+.header_logo a img{
+	display: inline-block;
+	height: 55px;
+	width: auto;
 }
 
-img{
-    display: inline-block;
-    width: 45px;
+.header ul{
+	line-height: 55px;
+	margin-top: -55px;
+	list-style: none;
+}
+
+.questionslist{
+	float:left;
+	display: inline-block;
+}
+
+.ewpost{
+	float:right;
+	display: inline-block;
+}
+
+.header ul li a img{
+	height: auto;
+	width: 30px;
 }
 
 .questionslist{
