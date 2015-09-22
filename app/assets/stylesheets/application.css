@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 .header{
 	background: #414141;
 	height: 55px;
@@ -21,13 +22,12 @@
 
 .header_logo{
 	line-height: 0;
-	margin:0;
+	margin: 0;
 }
 
 .header_logo a img{
 	display: inline-block;
 	height: 55px;
-	width: auto;
 }
 
 .header ul{
@@ -37,7 +37,7 @@
 }
 
 .questionslist{
-	float:left;
+	float: left;
 	display: inline-block;
 }
 
